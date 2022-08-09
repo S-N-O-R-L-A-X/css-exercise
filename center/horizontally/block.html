@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box1 {
+            margin: 0 auto;
+            width: 20%;
+            height: 20%;
+            background-color: red;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 20%;
+        }
+
+        .box2 div {
+            display: inline-block;
+            background-color: yellow;
+            width: 20%;
+            height: 100%;
+            margin: 5px;
+        }
+
+        .box3 {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+
+        .box3 div {
+            display: inline-block;
+            background-color: green;
+            width: 20%;
+            height: 100%;
+            margin: 5px;
+        }
+
+        .box4 {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box4 div {
+            display: inline-block;
+            background-color: blue;
+            width: 20%;
+            height: 100%;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">use margin: 0 auto;</div>
+    <div class="box2">
+        <div>use</div>
+        <div>display: inline-block</div>
+        <div>in div</div>
+    </div>
+    <div class="box3">
+        <div>use</div>
+        <div>text-align: center;</div>
+        <div>in box3</div>
+    </div>
+    <div class="box4">
+        <div>use</div>
+        <div>display: flex</div>
+        <div>in box4</div>
+    </div>
+</body>
+
+</html>
