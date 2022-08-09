@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table td {
+            padding: 20px;
+            background-color: red;
+        }
+
+        .tb {
+            width: 20%;
+            height: 20%;
+            padding: 5%;
+            background-color: yellow;
+            display: table-cell;
+        }
+
+        .flex-center {
+            display: flex;
+            background-color: green;
+            width: 20%;
+            height: 20%;
+            justify-content: center;
+        }
+
+        .flex-center span {
+            padding: 5%;
+        }
+
+        .ghost-center {
+            position: relative;
+            background-color: blue;
+            width: 20%;
+            height: 20%;
+            /*no padding, no height*/
+            padding: 5%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>table can be used in multiple lines</td>
+            <td>table can be used in multiple lines</td>
+        </tr>
+        <tr>
+            <td>table can be used in multiple lines</td>
+            <td>table can be used in multiple lines</td>
+        </tr>
+    </table>
+
+    <div class="tb">
+        <span>use table cell</span>
+    </div>
+
+    <div class="flex-center">
+        <span>use flex</span>
+    </div>
+
+    <div class="ghost-center"><span>use ghost element use ghost element use ghost element</span></div>
+</body>
+
+</html>
