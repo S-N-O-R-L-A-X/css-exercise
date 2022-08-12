@@ -17,27 +17,47 @@
             background-color: red;
             width: 20%;
             height: 20%;
+            margin-top: 5%;
+            color: white;
         }
 
         .container1 {
             position: relative;
         }
 
+        .container2 {
+            position: relative;
+        }
+
+        .box {
+            background-color: black;
+            padding: 5%;
+        }
+
         .box1 {
             position: absolute;
-            background-color: black;
             top: 50%;
             height: 10%;
             margin-top: -10%;
-            padding: 5%;
+        }
+
+        .box2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
     </style>
 </head>
 
 <body>
     <div class="container container1">
-        <div class="box1"></div>
+        <div class="box box1">when you know the height of the element</div>
     </div>
+
+    <div class="container container2">
+        <div class="box box2">nudge it up half of it’s height after bumping it down halfway</div>
+    </div>
+
 </body>
 
 </html>
