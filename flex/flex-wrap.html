@@ -11,6 +11,7 @@
             display: flex;
             flex-wrap: wrap;
             background-color: red;
+            margin: 20px;
         }
 
         .flex-container div {
@@ -19,12 +20,50 @@
             padding: 20px;
             font-size: 20px;
         }
+
+        .flex-container2 {
+            /*default is nowrap*/
+            flex-wrap: nowrap;
+        }
+
+        .flex-container3 {
+            flex-wrap: wrap-reverse;
+        }
     </style>
 </head>
 
 <body>
-
     <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <div class="flex-container flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <div class="flex-container flex-container3">
         <div>1</div>
         <div>2</div>
         <div>3</div>
