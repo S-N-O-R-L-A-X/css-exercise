@@ -29,6 +29,18 @@
             position: relative;
         }
 
+        .container3 {
+            position: relative;
+            display: table;
+            padding: 2.5%;
+        }
+
+        .container4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .box {
             background-color: black;
             padding: 5%;
@@ -46,6 +58,16 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
+        .box3 {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .box4 {
+            /* resize: vertical;
+            overflow: auto; */
+        }
     </style>
 </head>
 
@@ -58,6 +80,13 @@
         <div class="box box2">nudge it up half of it’s height after bumping it down halfway</div>
     </div>
 
+    <div class="container container3">
+        <div class="box box3">when you don't care if the element stretches the height of the container</div>
+    </div>
+
+    <div class="container container4">
+        <div class="box box4">flex box is also a choice</div>
+    </div>
 </body>
 
 </html>
