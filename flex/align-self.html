@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            background-color: red;
+            margin: 20px;
+            height: 300px;
+        }
+
+        .flex-container div {
+            background-color: yellow;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>use</div>
+        <div>align-self</div>
+        <div>to</div>
+        <div>change</div>
+        <div>align</div>
+        <div>style</div>
+        <div>1</div>
+        <div style="align-self:center">2 center</div>
+        <div style="align-self:flex-start">3 flex-start</div>
+        <div style="align-self:flex-end">4 flex-end</div>
+        <div style="align-self:baseline">5 baseline</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>
