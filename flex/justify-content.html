@@ -10,9 +10,28 @@
         .flex-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             background-color: red;
             margin: 20px;
+        }
+
+        .flex1 {
+            justify-content: center;
+        }
+
+        .flex2 {
+            justify-content: flex-end;
+        }
+
+        .flex3 {
+            justify-content: space-between;
+        }
+
+        .flex4 {
+            justify-content: space-around;
+        }
+
+        .flex5 {
+            justify-content: stretch;
         }
 
         .flex-container div {
@@ -25,7 +44,61 @@
 </head>
 
 <body>
-    <div class="flex-container">
+    <div class="flex-container flex1">
+        <div>justify-content</div>
+        <div>center</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="flex-container flex2">
+        <div>justify-content</div>
+        <div>flex-end</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="flex-container flex3">
+        <div>justify-content</div>
+        <div>space-between</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="flex-container flex4">
+        <div>justify-content</div>
+        <div>space-around</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="flex-container flex5">
+        <div>justify-content</div>
+        <div>stretch</div>
         <div>1</div>
         <div>2</div>
         <div>3</div>
