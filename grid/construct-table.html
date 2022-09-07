@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .grid-container {
+            display: grid;
+            grid-template-rows: 80px 120px;
+            grid-template-columns: auto auto auto;
+            background-color: red;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 80px 120px;
+            background-color: red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">row is </div>
+        <div class="grid-item">80px</div>
+        <div class="grid-item">120px</div>
+        <div class="grid-item">col is auto</div>
+        <div class="grid-item">auto</div>
+        <div class="grid-item">auto</div>
+    </div>
+
+    <div class="grid-container2">
+        <div class="grid-item">col is </div>
+        <div class="grid-item">80px</div>
+        <div class="grid-item">120px</div>
+        <div class="grid-item">row is auto</div>
+        <div class="grid-item">auto</div>
+        <div class="grid-item">auto</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">row is </div>
+        <div class="grid-item">80px</div>
+        <div class="grid-item">120px</div>
+        <div class="grid-item">col is auto</div>
+        <div class="grid-item">auto</div>
+        <div class="grid-item">auto</div>
+        <div class="grid-item">if there is more content</div>
+        <div class="grid-item">it will be added as grid-item</div>
+    </div>
+</body>
+
+</html>
