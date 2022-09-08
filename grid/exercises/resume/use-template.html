@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header photo photo'
+                'info info info info photo photo'
+                'experience experience experience experience experience experience'
+            ;
+            grid-gap: 10px;
+            background-color: red;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 60px;
+            font-size: 30px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .photo {
+            grid-area: photo;
+        }
+
+        .info {
+            grid-area: info;
+        }
+
+        .experience {
+            grid-area: experience;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">header</div>
+        <div class="grid-item photo">photo</div>
+        <div class="grid-item info">personal info</div>
+        <div class="grid-item experience">experience</div>
+    </div>
+</body>
+
+</html>
