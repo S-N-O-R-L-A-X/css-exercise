@@ -17,17 +17,22 @@
             font-size: 30px;
         }
 
-        .item1 {
-            grid-column: 1 / span 2;
+        .header {
+            grid-column: 1;
             grid-row: 1;
         }
 
-        .item2 {
+        .photo {
             grid-column: 3;
             grid-row: 1 / span 2;
         }
 
-        .item5 {
+        .info {
+            grid-column: 1 /span 2;
+            grid-row: 2;
+        }
+
+        .experience {
             grid-column: 1 / span 3;
             grid-row: 3;
         }
@@ -36,11 +41,10 @@
 
 <body>
     <div class="grid-container">
-        <div class="grid-item item1">header</div>
-        <div class="grid-item item2">photo</div>
-        <div class="grid-item item3">content1</div>
-        <div class="grid-item item4">content2</div>
-        <div class="grid-item item5">experience</div>
+        <div class="grid-item header">header</div>
+        <div class="grid-item photo">photo</div>
+        <div class="grid-item info">info</div>
+        <div class="grid-item experience">experience</div>
     </div>
 </body>
 
