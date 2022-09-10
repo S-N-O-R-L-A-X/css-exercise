@@ -6,7 +6,7 @@
         .grid-container {
             display: grid;
             grid-template-areas:
-                'header header header header photo photo'
+                'header header header empty photo photo'
                 'info info info info photo photo'
                 'experience experience experience experience experience experience'
             ;
@@ -20,6 +20,11 @@
             text-align: center;
             padding: 60px;
             font-size: 30px;
+        }
+
+        .empty {
+            grid-area: empty;
+            background-color: red;
         }
 
         .header {
@@ -42,6 +47,7 @@
 
 <body>
     <div class="grid-container">
+        <div class="grid-item empty"></div>
         <div class="grid-item header">header</div>
         <div class="grid-item photo">photo</div>
         <div class="grid-item info">personal info</div>
