@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*grid-column is the combination of grid-column-start and grid-column-end */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: red;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid-item1 {
+            /*from line 1 to line 4*/
+            grid-column: 1/4;
+        }
+
+        .grid-item3 {
+            /*from line 1 covering 3*/
+            grid-column: 1/span 3;
+        }
+
+        .grid-item6 {
+            grid-column: 2/4;
+        }
+
+        .grid-item8 {
+            grid-column: 2/span 2;
+        }
+
+        .grid-item10 {
+            grid-column: 1/6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-item1">grid-column: 1/4;</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item grid-item3">grid-column: 1/span 3;</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item grid-item6">grid-column: 2/4;</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item grid-item8">grid-column: 2/span 2;</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item grid-item10">grid-column: 1/6;</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
+</body>
+
+</html>
