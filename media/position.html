@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        .leftsidebar {
+            width: auto;
+        }
+
+        @media screen and (min-width: 600px) {
+            .leftsidebar {
+                float: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="leftsidebar">
+            <ul class="menu">
+                <li class="menu-item">menu-item 1</li>
+                <li class="menu-item">menu-item 2</li>
+                <li class="menu-item">menu-item 3</li>
+                <li class="menu-item">menu-item 4</li>
+                <li class="menu-item">menu-item 5</li>
+            </ul>
+        </div>
+        <p>when the media type is screen and the viewport is 600px wide or wider, this sentence will be right on the
+            menu.</p>
+    </div>
+</body>
+
+</html>
