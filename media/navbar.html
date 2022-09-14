@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .nav a {
+            float: left;
+            padding: 30px;
+            font-size: 30px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav a:hover {
+            background-color: grey;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="">link1</a>
+        <a href="">link2</a>
+        <a href="">link3</a>
+    </div>
+</body>
+
+</html>
