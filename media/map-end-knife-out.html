@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sword {
+            height: 100px;
+        }
+
+        .sword-handle {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 35px;
+            background-color: black;
+        }
+
+        .sword-connector {
+            position: absolute;
+            width: 30px;
+            height: 100px;
+            left: 30px;
+            top: 0;
+            background-color: black;
+        }
+
+        .sword-body {
+            position: absolute;
+            width: 300px;
+            height: 30px;
+            top: 35px;
+            left: 60px;
+            background-color: red;
+        }
+
+        .map {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        @media screen and (max-width:360px) {
+            .map {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sword">
+        <div class="sword-handle"></div>
+        <div class="sword-connector"></div>
+        <div class="sword-body"></div>
+    </div>
+    <div class="map">燕国地图</div>
+</body>
+
+</html>
