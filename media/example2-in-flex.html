@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .item {
+            float: left;
+            width: 25%;
+        }
+
+        .item1 {
+            background-color: blue;
+        }
+
+        .item2 {
+            background-color: red;
+        }
+
+        .item3 {
+            background-color: yellow;
+        }
+
+        .item4 {
+            background-color: green;
+        }
+
+        /* Responsive layout - makes two column-layout instead of a four-column layout */
+        @media (max-width: 800px) {
+            .item {
+                width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes a one column-layout instead of a two-column layout */
+        @media (max-width: 600px) {
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>In this example, we don't use flex to create different layouts for different screen sizes.</p>
+    <p><b>Resize the browser window to see that the direction changes when the
+            screen size is 800px wide or smaller.</b></p>
+    <p>visit @/flex/example/example2.html to see the flex version.</p>
+    <div class="box">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+
+</body>
+
+</html>
