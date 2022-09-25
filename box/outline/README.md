@@ -1,0 +1,1 @@
+Outlines don't take up space, so they don't affect the layout of the document in any way.
