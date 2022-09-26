@@ -9,34 +9,35 @@
     <style>
         .box {
             background-color: red;
-            /* top right bottom left */
-            margin: 100px 300px 50px 400px
+            margin: auto;
+
         }
 
         .box2 {
             background-color: blue;
             /* top and bottom right and left */
-            margin: 100px 300px;
+            margin: auto;
             color: white;
+            width: 400px;
         }
     </style>
 </head>
 
 <body>
     <div class="box">
-        this is a box whose margin property is margin: 100px 300px 50px 400px
+        this is a box whose margin property is auto but no width
     </div>
 
     <div>
         this is outer box
         <div class="box">
-            this is the inner box whose margin property is margin: 100px 300px 50px 400px
+            this is the inner box whose margin property is auto but no width
         </div>
     </div>
 
 
     <div class="box2">
-        this is a box whose margin property is margin: 100px 300px
+        this is a box whose margin property is auto with width: 400px;
     </div>
 </body>
 
