@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: red;
+            /* top right bottom left */
+            margin: 100px 300px 50px 400px
+        }
+
+        .box2 {
+            background-color: blue;
+            /* top and bottom right and left */
+            margin: 100px 300px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        this is a box whose margin property is margin: 100px 300px 50px 400px
+    </div>
+
+    <div>
+        this is outer box
+        <div class="box">
+            this is the inner box whose margin property is margin: 100px 300px 50px 400px
+        </div>
+    </div>
+
+
+    <div class="box2">
+        this is a box whose margin property is margin: 100px 300px
+    </div>
+</body>
+
+</html>
