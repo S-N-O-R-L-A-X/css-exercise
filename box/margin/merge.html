@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .box1 {
+            display: inline-block;
+            background-color: red;
+            margin: 0 100px 0 0;
+        }
+
+        .box2 {
+            display: inline-block;
+            background-color: green;
+            margin: 0 0 0 200px;
+        }
+
+        .box3 {
+            background-color: blue;
+            margin: 0 0 100px 0;
+        }
+
+        .box4 {
+            background-color: yellow;
+            margin: 200px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box box1"> margin 100px</div>
+        <div class="box box2"> margin 200px</div>
+    </div>
+
+    <div>
+        <div class="box box3"> margin 100px</div>
+        <div class="box box4"> margin 200px</div>
+    </div>
+    The vertical gap is not 300px but 200px due to margin collapse
+</body>
+
+</html>
