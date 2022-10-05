@@ -41,6 +41,36 @@
             display: inline-block;
             border-right: 50px solid green;
         }
+
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+
+        .two-color-triangle {
+            display: inline-block;
+            background: linear-gradient(45deg, blue, blue 50%, red, red 50%);
+        }
+
+        .NW {
+            display: inline-block;
+            background: linear-gradient(135deg, orange, orange 50%, transparent 50%, transparent 100%);
+        }
+
+        .NE {
+            display: inline-block;
+            background: linear-gradient(-135deg, yellowgreen, yellowgreen 50%, transparent 50%, transparent 100%);
+        }
+
+        .SW {
+            display: inline-block;
+            background: linear-gradient(45deg, purple, purple 50%, transparent 50%, transparent 100%);
+        }
+
+        .SE {
+            display: inline-block;
+            background: linear-gradient(-45deg, aqua, aqua 50%, transparent 50%, transparent 100%);
+        }
     </style>
 </head>
 
@@ -52,6 +82,15 @@
         <div class="single-triangle top"></div>
         <div class="single-triangle left"></div>
         <div class="single-triangle right"></div>
+    </div>
+
+    <div>
+        use linear-gradient
+        <div class="square two-color-triangle"></div>
+        <div class="square NW"></div>
+        <div class="square NE"></div>
+        <div class="square SW"></div>
+        <div class="square SE"></div>
     </div>
 
 </body>
