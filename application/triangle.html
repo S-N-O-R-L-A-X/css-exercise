@@ -10,17 +10,34 @@
         .triangle {
             width: 0;
             height: 0;
-            border-width: 20px;
-            border-style: solid;
-            border-color: transparent transparent red transparent;
-            /* 加上这一行可以让三角形顶格， 不加三角形会下移20px */
-            border-top: none;
+            border: 50px solid transparent;
+            /* margin: auto; */
+        }
+
+        .top {
+            border-bottom: 50px solid blue;
+        }
+
+        .right {
+            border-left: 50px solid red;
+        }
+
+        .bottom {
+            border-top: 50px solid yellow;
+        }
+
+        .left {
+            border-right: 50px solid green;
         }
     </style>
 </head>
 
 <body>
-    <div class="triangle"></div>
+    <div class="triangle bottom"></div>
+    <div class="triangle left"></div>
+    <div class="triangle right"></div>
+    <div class="triangle top"></div>
+
 </body>
 
 </html>
