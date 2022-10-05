@@ -7,36 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .triangle {
+        .single-triangle {
             width: 0;
             height: 0;
             border: 50px solid transparent;
             /* margin: auto; */
         }
 
+        .four-color-triangle {
+            display: inline-block;
+            border-top: 50px solid yellow;
+            border-bottom: 50px solid blue;
+            border-left: 50px solid red;
+            border-right: 50px solid green;
+        }
+
         .top {
+            display: inline-block;
             border-bottom: 50px solid blue;
         }
 
         .right {
+            display: inline-block;
             border-left: 50px solid red;
         }
 
         .bottom {
+            display: inline-block;
             border-top: 50px solid yellow;
         }
 
         .left {
+            display: inline-block;
             border-right: 50px solid green;
         }
     </style>
 </head>
 
 <body>
-    <div class="triangle bottom"></div>
-    <div class="triangle left"></div>
-    <div class="triangle right"></div>
-    <div class="triangle top"></div>
+    <div>
+        use border
+        <div class="four-color-triangle"></div>
+        <div class="single-triangle bottom"></div>
+        <div class="single-triangle top"></div>
+        <div class="single-triangle left"></div>
+        <div class="single-triangle right"></div>
+    </div>
 
 </body>
 
